@@ -5,8 +5,11 @@
 // node -e "console.log("test") - executes a string 
 // npm i -g nodemon - to restart the app automatically (install nodemon globally)
 // npm i --save-dev nodemon - (install nodemon as a development dependency)
+// nodemon fibonacci.js - to run it
 
 console.log("test")
+
+//---------ITERATION----------
 
 function fibs(number) {
     const array = [0, 1];   
@@ -18,6 +21,8 @@ function fibs(number) {
 }
 
 console.log(fibs(8));
+
+//---------RECURSION----------
 
 function fibsRec(number, array = [0, 1]) { 
     console.log("This was printed recursively");  
