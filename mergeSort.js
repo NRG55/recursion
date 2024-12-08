@@ -26,8 +26,6 @@ function merge(firstArray, secondArray) {
     return mergedArray;
 }
 
-console.log(merge([1, 2, 10, 13], [8, 9, 20, 23]));
-
 function mergeSort(array) {
     if (array.length === 1) {
         return array;
@@ -46,3 +44,18 @@ const array2 = [105, 79, 100, 110];
 
 console.log(mergeSort(array1));
 console.log(mergeSort(array2));
+
+// function mergeOption2(leftArray, rightArray) {
+//     let mergedArray = [];
+  
+//     while (leftArray.length && rightArray.length) {
+//       if (leftArray[0] < rightArray[0]) {
+//         mergedArray.push(leftArray.shift());
+//       } else {
+//         mergedArray.push(rightArray.shift());
+//       }
+//     }  
+//     return [...mergedArray, ...leftArray, ...rightArray];
+//   }
+
+//   console.log(mergeOption2([1, 2, 10, 13], [8, 9, 20, 23, 24, 63]));
